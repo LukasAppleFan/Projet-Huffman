@@ -1,0 +1,26 @@
+Fichier texte pour le projet Huffman
+
+#si fils gauche = 0,si fils droit = 1 pour le dictionnaire
+
+#parcours en profondeur
+# si feuille = [arbre.valeurs] = chr
+#si a gauche : arbre.fils_gauche, dico, "chr+0"
+    
+    
+    
+def feuille(noeud):
+    return noeud.gauche is None and noeud.droit is None
+
+
+    
+def parcours (arbre, dictionnaire, chr) :
+    chr = ""
+    def feuille(noeud):
+        return noeud.gauche is None and noeud.droit is None
+    while not feuille :
+        if arbre.fils_gauche is not None :
+            return (arbre.fils_gauche, dictionnaire, chr+0)
+        elif arbre.fils_droit is not None :
+            return (arbre.fils_droit, dictionnaire, chr+1)
+    else :
+        return [parcours.valeur] == chr

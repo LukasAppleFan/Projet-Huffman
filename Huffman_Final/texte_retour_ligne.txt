@@ -1,0 +1,4 @@
+Le codage de Huffman est un algorithme de compression de données sans perte.
+Le codage de Huffman utilise un code à longueur variable pour représenter un symbole de la source (par exemple un caractère dans un fichier).
+
+Huffman
